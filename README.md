@@ -1,1 +1,0 @@
-# DIP392-group_TMDA
