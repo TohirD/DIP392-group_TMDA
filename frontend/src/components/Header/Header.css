@@ -1,12 +1,13 @@
-.header{
+.header-main{
     height: 34vw;
     margin: 30px auto;
     background: url('/header_img.png') no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     position: relative;
+    border-radius: 10px;
 }
-
-.header-contents{
+.header-subclass{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -17,45 +18,40 @@
     left: 6vw;
     animation: fadeIn 3s;
 }
-
-.header-contents h2{
-    font-weight: 500;
-    color: white;
-    font-size: max(4.5vw, 22px);
+.header-subclass h2{
+    font-weight:500;
+    color: #000;
+    font-size: max(4.5vw,22px);
 }
-
-.header-contents p{
-    color: white;
+.header-subclass p{
+    color: #000;
     font-size: 1vw;
 }
-
-.header-contents button{
+.header-subclass button{
     border: none;
-    color: #747474;
+    color: #fff;
     font-weight: 500;
     padding: 1vw 2.3vw;
-    background-color: white;
-    font-size: max(1vw, 13px);
+    background: #000;
+    font-size: max(1vw,13px);
     border-radius: 50px;
-    cursor: pointer;
 }
-
-@media (max-width: 1050px){
-    .header-contents{
+@media (max-width:1050px) {
+    .header-main{
+        height: 38vw;
+    }
+    .header-subclass{
         max-width: 45%;
     }
 }
-
-@media (max-width: 750px){
-    .header-contents{
-        max-width: 65%;
+@media(max-width:750px){
+    .header-subclass{
+        max-width: 55%;
     }
-
-    .header-contents p{
-        display: none;
+    .header-subclass p{
+       display: none;
     }
-
-    .header-contents button{
+    .header-subclass button{
         padding: 2vw 4vw;
     }
 }

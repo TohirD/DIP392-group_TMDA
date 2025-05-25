@@ -2,15 +2,15 @@ import React from 'react'
 import './Header.css'
 
 const Header = () => {
-  return (
-    <div className='header'>
-      <div className="header-contents">
-        <h2>Order your favourite food here</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae laboriosam nihil soluta et nesciunt voluptatem repellendus illum ea, quia veniam aperiam neque, porro, quasi deserunt. Velit sapiente maiores commodi veritatis?</p>
-        <button>View Menu</button>
-      </div>
-    </div>
-  )
+    return (
+        <div className='header-main'>
+            <div className='header-subclass'>
+                <h2>Order your favourite food</h2>
+                <p>Bistro BALTS maltītes ir izcils risinājums ēdienu piegādei arī uz Tavu biroju vai jebkuru citu darba vietu – sapulcēm, semināriem un citiem pasākumiem vai vienkārši sev un kolēģiem.</p>
+                <button>View Menu</button>
+            </div>
+        </div>
+    )
 }
 
 export default Header

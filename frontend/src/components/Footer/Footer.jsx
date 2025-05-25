@@ -3,44 +3,39 @@ import './Footer.css'
 import { assets } from '../../assets/assets'
 
 const Footer = () => {
-
-    const currentYear = new Date().getFullYear();
-
   return (
-    <div className='footer' id='footer'>
-      <div className="footer-content">
-        <div className="footer-content-left">
-            <img src={assets.logo} alt="" />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dignissimos quia sequi nam, debitis animi velit iste incidunt delectus fuga.</p>
-            <div className="footer-social-icons">
+    <div className='site-footer' id='footer'>
+      <div className="footer-container">
+        <div className="footer-section about-section">
+            {/* <img src={assets.logo} alt="" /> */}
+            <p>Bistro BALTS maltītes ir izcils risinājums ēdienu piegādei arī uz Tavu biroju vai jebkuru citu darba vietu – sapulcēm, semināriem un citiem pasākumiem vai vienkārši sev un kolēģiem.</p>
+            <div className="footer-socials">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
                 <img src={assets.linkedin_icon} alt="" />
             </div>
         </div>
-
-        <div className="footer-content-center">
+        <div className="footer-section links-section">
             <h2>COMPANY</h2>
             <ul>
                 <li>Home</li>
-                <li>About Us</li>
+                <li>About us</li>
                 <li>Delivery</li>
-                <li>Support</li>
+                <li>Privacy policy</li>
             </ul>
         </div>
-
-        <div className="footer-content-right">
+        <div className="footer-section contact-section">
             <h2>GET IN TOUCH</h2>
             <ul>
-                <li>+18-23230-2322</li>
-                <li>support@tomati.com</li>
+                <li>+37129020200</li>
+                <li>balts@balts.lv</li>
             </ul>
         </div>
       </div>
       <hr />
-      <p className='footer-copyright'>Copyright &copy; {currentYear} Tomati.</p>
+      <p className="footer-text">Copyright 2024 © Batls.lv - All Right Reserved.</p>
     </div>
-  )
+)
 }
 
 export default Footer
